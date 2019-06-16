@@ -257,14 +257,7 @@ $('#myModal').modal('no');
 				<div class="logo">
 					<a href="index.html"><h1>Fun Cinemas</h1></a>
 				</div>
-				<div class="search">
-					<div class="search2">
-					  <form>
-						<i class="fa fa-search"></i>
-						 <input type="text" value="Search for a movie" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search for a movie';}"/>
-					  </form>
-					</div>
-				</div>
+			
 				<div class="clearfix"></div>
 			</div>
 	<div class="bootstrap_container">
@@ -412,15 +405,41 @@ $('#myModal').modal('no');
 		<div class="fleft m-select">
                         
                     </div>
-		<div class="m-select-movie">
-					<select class="list_of_movies"><option value="">Select Movie</option><optgroup label="Telugu"><option style="padding-left: 10px;" value="ANAN">Asura (U/A)</option><option style="padding-left: 10px;" value="CHDM">Jurassic World (2D Telugu) (U/A)</option><option style="padding-left: 10px;" value="GUDR">Jurassic World (3D Telugu) (U/A)</option><option style="padding-left: 10px;" value="GUNT">Jyothi Lakshmi (U/A)</option><option style="padding-left: 10px;" value="JANG">Kerintha (U)</option><option style="padding-left: 10px;" value="KAKI">Krishnamma Kalipindi Iddarini (U/A)</option><option style="padding-left: 10px;" value="KURN">Lava Kusa (A)</option><option style="padding-left: 10px;" value="MART">Pandaga Chesko (U/A)</option><option style="padding-left: 10px;" value="PRVT">Tippu (A)</option><option style="padding-left: 10px;" value="RAJA">Vinavayya Ramayya (U/A)</option></optgroup><optgroup label="Hindi"><option style="padding-left: 10px;" value="TAWA">ABCD 2 (3D) (U)</option><option style="padding-left: 10px;" value="ZIRO">ABCD 2 (2D) (U)</option></optgroup><optgroup label="English"><option style="padding-left: 10px;" value="DIB">Jurassic World (3D) (U/A)</option><option style="padding-left: 10px;" value="GUW">Guwahati</option></optgroup></select>
+       <div class="m-select-movie">
+					<select class="list_of_movies"><option value="">Select Movie</option>
+						<optgroup label="Hindi">
+							<option style="padding-left: 10px;" value="Kesari">Kesari</option>
+							<option style="padding-left: 10px;" value="URI">URI</option>
+							<option style="padding-left: 10px;" value="2.0">2.0</option>
+							<option style="padding-left: 10px;" value="Jalebi">Jalebi</option>
+							<option style="padding-left: 10px;" value="Student of the year 2">Student of the year 2</option>
+							<option style="padding-left: 10px;" value="Accidental Prime Minister">Accidental Prime Minister</option>
+							<option style="padding-left: 10px;" value="Badla">Badla</option>
+							<option style="padding-left: 10px;" value="Lukka Chuppi">Lukka Chuppi</option>
+							<option style="padding-left: 10px;" value="KGF">KGF</option>
+							<option style="padding-left: 10px;" value="Gully Boy">Gully Boy</option></optgroup>
+							<optgroup label="English">
+						     <option style="padding-left: 10px;" value="Avengers">Avengers</option>
+						     <option style="padding-left: 10px;" value="Captain Marvel">Captain Marvel</option>
+						     <option style="padding-left: 10px;" value="Us">Us</option>
+						     <option style="padding-left: 10px;" value="Final Score">Final Score</option>
+						     <option style="padding-left: 10px;" value="Five Feet Apart">Five Feet Apart</option>
+						     <option style="padding-left: 10px;" value="No Fathers In Kashmir">No Fathers In Kashmir</option>
+							 </optgroup>
+						     </select>
                     </div>
-		<div class="m-select-date">
-					<select class="list_of_movies"><option value="">Select Date</option><option style="padding-left: 10px;" value="ANAN">Today, 18 jun</option><option style="padding-left: 10px;" value="CHDM">Tomorrow, 19 jun</option><option style="padding-left: 10px;" value="CHDM">saturday, 20 jun</option><option style="padding-left: 10px;" value="CHDM">sunday, 21 jun</option></select>
+		            <div class="m-select-date">
+					<select class="list_of_movies"><option value="">Select Date</option>
+						<option style="padding-left: 10px;" value="10 April">10 April</option>
+						<option style="padding-left: 10px;" value="11 April">11 April</option>
+						<option style="padding-left: 10px;" value="12 April">12 April</option>
+						<option style="padding-left: 10px;" value="13 April">13 April</option></select>
 		</div>
+                    
+		
 		<div class="clearfix" style="margin-left: 14px;
     margin-top: 12px;">
-			 <button onclick="window.location.pathname='C:/Users/Shivani%20Sharma/Desktop/web/seatAllocation.html'" class="btn btn-primary" style="padding:10px;">Book</button>
+			 <button id="book" onclick="changePath()" class="btn btn-primary" style="padding:10px;">Book</button>
  
 		</div>
 	</div>
@@ -740,5 +759,7 @@ $('#myModal').modal('no');
 						});
 					</script>
 				<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+<script src="movieticket.js"></script>
 </body>
 </html>
