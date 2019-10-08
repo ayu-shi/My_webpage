@@ -29,14 +29,10 @@
 
 
 
-			<!-- Custom webfonts -->
+			
 			<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700">
 
-			<!--
-				We need to setup the listener for campaign decisions before optimizely is setup.
-				As optimizely is being setup in multiple places, this is the only safe place for this to happen.
-				We're using this data later on in analytics.js
-			-->
+			
 
 			<script>
 				(function(){
@@ -71,17 +67,15 @@
 				};
 			</script>
 
-			<!-- inject:css -->
+			
 			 <link rel="stylesheet" href="../../static.invisionapp-cdn.com/spa/cfprojects/share/lib/vendor.min.513d9d84f8.css" /> 
 			 <link rel="stylesheet" href="../../static.invisionapp-cdn.com/spa/cfprojects/share/lib/style.min.fba8fdc6b7.css" /> 
-			<!-- endinject -->
+			
 
 		</head>
 		<body ng-class="bodyClass" ng-style="bodyStyle" class="share-v2">
 
-			<!-- <div style="height:30px;width:100%;z-index:500;background-color:#000;text-align: center;font-weight: bold;color: white;padding-top:20px;">V2 Share Experience</div> -->
-
-			<!-- BEGIN: Loading Sequence. -->
+			
 			<div
 				ng-if="isLoadingOpen"
 				ng-controller="loading.LoadingController"
@@ -89,7 +83,7 @@
 				class="m-loading"
 				ng-class="{ 'embed': share.isEmbed }">
 
-				<!-- BEGIN: Loading Indicator. -->
+				
 
 				<div class="loading-backdrop" style="background-color: ">
 
@@ -118,14 +112,14 @@
 							
 						</h2>
 
-					</div> <!-- loading-container -->
+					</div> 
 
-				</div> <!-- loading-backdrop -->
+				</div> 
 
-				<!-- END: Loading Indicator. -->
+				
 
 			</div>
-			<!-- END: Loading Sequence. -->
+			
 
 
 			<div ng-include=" '/assets/apps/share/views/partials/preload.htm' "></div>
@@ -139,13 +133,10 @@
 				ng-include=" '/assets/apps/share/views/browse/browse.htm' ">
 			</div>
 
-			<!--
-				In order to be able to disable horizontal scrolling for some screens, we
-				need to wrap the view in order to be able to maintain screen alignment.
-			-->
+			
 			<div class="desktop-wrapper">
 
-				<!-- Tour Points (in preview mode). -->
+				
 				<div
 					ng-if="( subview == 'preview' )"
 					ng-include=" '/assets/apps/share/views/preview/preview-tour-comments.htm' ">
@@ -191,10 +182,10 @@
 
 			
 
-			<!-- inject:js -->
+			
 			 <script src="../../static.invisionapp-cdn.com/spa/cfprojects/share/lib/vendor.min.4a51cacd15.js"></script> 
 			 <script src="../../static.invisionapp-cdn.com/spa/cfprojects/share/lib/invision.min.e062f9ac4d.js"></script> 
-			<!-- endinject -->
+			
 
 	
 			<canvas id="renderCanvas" style="position: absolute;left: -9999px;top: -9999px;"></canvas>
